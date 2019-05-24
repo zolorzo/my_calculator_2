@@ -9,7 +9,18 @@ num.value = Math.pow(num.value, 3);
 function cuadrado(){
 var num=document.getElementById("n2");
 num.value = Math.pow(num.value, 4);
-
+}
+function invs(){
+var num=document.getElementById("n7");
+num.value = Math.pow(num.value, -1);
+}
+function sq(){
+var num=document.getElementById("n3");
+num.value = Math.pow(num.value, 2);
+}
+function sinx(){
+var num=document.getElementById("n4");
+num.value =Math.sin(num.value)
 }
 </script>
 </head>
@@ -24,6 +35,21 @@ Number:
 <input type="text" id="n2">
 <p>
 <button onclick="cuadrado()"> x^4 </button>
+</p>
+Number:
+<input type="text" id="n3">
+<p>
+<button onclick="sq()"> x^2 </button>
+</p>
+Number:
+<input type="text" id="n4">
+<p>
+<button onclick="sinx()"> sin(x)</button>
+</p>
+Number:
+<input type="text" id="n7">
+<p>
+<button onclick="invs()"> 1/x</button>
 </p>
 </body>
 </html>
